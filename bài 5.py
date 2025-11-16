@@ -1,5 +1,9 @@
-n = int(input("Nhập một số tự nhiên n > 0: "))
+a = "Hello Guy!"
 
-while n >= 0:
-    print(n)
-    n = n - 1
+def say():
+    global a          
+    a = "Vinh University"
+    print("Trong hàm:", a)
+
+say()
+print("Ngoài hàm:", a)

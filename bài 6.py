@@ -1,5 +1,8 @@
-numbers = []
-for i in range(2000, 3201):
-    if (i % 7 == 0) and (i % 5 != 0):
-        numbers.append(str(i)) 
-print(",".join(numbers))
+def get_sum(*num):
+    tmp = 0
+    for i in num:
+        tmp += i
+    return tmp
+
+result = get_sum(1, 2, 3, 4, 5)
+print(result)
